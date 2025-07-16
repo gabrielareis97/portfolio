@@ -6,52 +6,40 @@
   <title>Gabriela Reis | Analista de Dados</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --rosa-claro: #f9e0e3;
-      --lavanda: #e6e6fa;
-      --menta: #d1f2eb;
-      --cinza: #555;
-      --branco: #fff;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: var(--rosa-claro);
-      color: var(--cinza);
+      background-color: #ffffff;
+      color: #333333;
+      margin: 0;
+      padding: 0;
       line-height: 1.6;
     }
 
     header {
-      background: var(--lavanda);
-      padding: 2rem 1rem;
       text-align: center;
+      padding: 2rem 1rem;
+      background-color: #f5f5f5;
     }
 
     header img {
-      width: 140px;
-      height: 140px;
+      width: 130px;
+      height: 130px;
       object-fit: cover;
       border-radius: 50%;
-      border: 4px solid var(--menta);
+      border: 3px solid #e0e0e0;
       margin-bottom: 1rem;
     }
 
     header h1 {
       font-size: 2rem;
-      color: #333;
+      margin: 0.5rem 0;
     }
 
     header p {
       font-size: 1rem;
-      color: #666;
       max-width: 600px;
       margin: 0.5rem auto;
+      color: #666666;
     }
 
     .container {
@@ -61,104 +49,251 @@
     }
 
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
+      text-align: center;
     }
 
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       margin-bottom: 1rem;
-      color: #333;
-    }
-
-    .tech-badges span {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
       display: inline-block;
-      background-color: var(--lavanda);
-      color: #333;
-      padding: 0.4rem 0.8rem;
+    }
+
+    .tech-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .tech-list span {
+      background-color: #f0f0f0;
+      padding: 0.5rem 0.8rem;
       border-radius: 20px;
-      margin: 0.2rem;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
     }
 
-    .project {
-      background-color: var(--branco);
-      padding: 1rem;
-      border-left: 5px solid var(--menta);
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 0.7rem;
+    }
+
+    .projects-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .project-card {
+      flex: 1 1 calc(33.333% - 1rem);
+      background-color: #fafafa;
+      border: 1px solid #eaeaea;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      max-width: 300px;
     }
 
-    .project h3 {
-      margin-bottom: 0.5rem;
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
     }
 
-    .project p {
-      font-size: 0.95rem;
-      margin-bottom: 0.5rem;
+    .project-card h3 {
+      font-size: 1.1rem;
+      margin: 0.8rem 0 0.4rem;
+      padding: 0 0.5rem;
     }
 
-    .project a {
+    .project-card h3 a {
       text-decoration: none;
-      color: #006666;
-      font-weight: bold;
+      color: #1a73e8;
+      transition: color 0.3s ease;
+    }
+
+    .project-card h3 a:hover {
+      color: #0c4da2;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .info-card {
+      background: #fafafa;
+      border: 1px solid #eaeaea;
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: left;
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .info-card img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .info-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .info-text strong {
+      font-size: 0.95rem;
+    }
+
+    .info-text span {
+      font-size: 0.85rem;
+      color: #666;
     }
 
     footer {
       text-align: center;
       padding: 2rem 1rem;
-      background-color: var(--lavanda);
+      background-color: #f5f5f5;
       font-size: 0.9rem;
+      color: #666;
     }
 
     footer a {
-      color: #333;
-      margin: 0 0.5rem;
+      color: #1a73e8;
       text-decoration: none;
+      margin: 0 0.3rem;
     }
   </style>
 </head>
 <body>
-
   <header>
     <img src="foto.png" alt="Gabriela Reis">
     <h1>Gabriela Reis</h1>
-    <p>Analista de Dados em formação com experiência em e-commerce, automações e visualizações de dados. Buscando oportunidades como Analista de Dados Júnior. 💻📊</p>
+    <p>Analista de Dados Jr</p>
   </header>
 
-  <div class="container">
+  <main class="container">
     <section>
-      <h2>💡 Sobre mim</h2>
-      <p>Atualmente trabalho com gestão financeira e análise de desempenho em e-commerce, elaborando dashboards, estudando dados de vendas, controlando estoque e desenvolvendo soluções com foco em performance e insights práticos.</p>
+      <h2>🙋‍♀️ Sobre mim</h2>
+      <ul>
+        <li>+10 anos de experiência na área comercial e administrativa</li>
+        <li>Especialista em visualizações estratégicas e insights de negócio</li>
+        <li>Experiência com dados de e-commerce e análise financeira</li>
+        <li>Comunicação clara, foco em resultados e mentalidade analítica</li>
+      </ul>
     </section>
 
     <section>
-      <h2>🛠 Tecnologias que uso</h2>
-      <div class="tech-badges">
-        <span>Python</span>
-        <span>R</span>
-        <span>SQL</span>
-        <span>Power BI</span>
-        <span>Excel</span>
-        <span>GitHub</span>
+      <h2>📁 Portfólio de Projetos</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="projeto1.png" alt="Projeto 1">
+          <h3><a href="https://github.com/gabrielareis97/ecommerce-sales-analysis-powerbi" target="_blank">Análise performance de vendas e-commerce</a></h3>
+          <p>Dashboard com insights de vendas, metas e desempenho. BigQuery, Power BI, DAX.</p>
+        </div>
+        <div class="project-card">
+          <img src="projeto2.jpg" alt="Projeto 2">
+          <h3><a href="#" target="_blank">Dashboard em PowerBI</a></h3>
+          <p>Criação de dashboard de desempenho de vendas para uma empresa fictícia - projeto em andamento -</p>
+        </div>
+        <div class="project-card">
+          <img src="projeto3.jpg" alt="Projeto 3">
+          <h3><a href="#" target="_blank">Análise Preditiva utilizando Python</a></h3>
+          <p>Projeto de pesquisa de mercado utilizando Python para tratamento de dados do Google Trends - projeto em andamento -</p>
+        </div>
+      </div>
+    </section>
+    <section>
+        <h2>🛠️ Skills & Ferramentas</h2>
+        <div class="tech-list">
+          <span>Power BI</span>
+          <span>Excel</span>
+          <span>Google Sheets</span>
+          <span>SQL</span>
+          <span>Python</span>
+          <span>R</span>
+          <span>BigQuery</span>
+          <span>DAX</span>
+          <span>Looker Studio</span>
+          <span>GitHub</span>
+        </div>
+      </section>
+
+    <section>
+      <h2>🎓 Formação Acadêmica</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <img src="mackenzie-logo.png" alt="Mackenzie">
+          <div class="info-text">
+            <strong>Análise e Desenvolvimento de Sistemas</strong>
+            <span>Universidade Presbiteriana Mackenzie · 2023–2025</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <section>
-      <h2>🚀 Projeto em Destaque</h2>
-      <div class="project">
-        <h3><a href="https://github.com/gabrielareis97/ecommerce-sales-analysis-powerbi" target="_blank">Análise de Performance - E-commerce Fictício</a></h3>
-        <p>Dashboard completo com análise de vendas, modelagem relacional e métricas de negócio. Ferramentas: BigQuery, Power BI, DAX.</p>
+        <h2>💼 Experiência Profissional</h2>
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-text">
+              <strong>Analista de e-commerce – Mega Store</strong>
+              <span>2023 · Gestão financeira e relatórios estratégicos</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-text">
+              <strong>Assistente Administrativo – Vitalli Home</strong>
+              <span>2014–2022 · Planilhas, controle e atendimento</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section>
+      <h2>📚 Cursos & Certificações</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <img src="google-logo.png" alt="Google">
+          <div class="info-text">
+            <strong>Google Data Analytics Certificate</strong>
+            <span>Coursera · 2024</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <img src="certiprof-logo.png" alt="CertiProf">
+          <div class="info-text">
+            <strong>BI Foundation</strong>
+            <span>CertiProf · 2024</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <img src="dsa-logo.png" alt="DSA Academy">
+          <div class="info-text">
+            <strong>Power BI Business Intelligence e Data Science</strong>
+            <span>DSA Academy · 2024</span>
+          </div>
+        </div>
       </div>
     </section>
-  </div>
+  </main>
 
   <footer>
-    <p>📬 Entre em contato: 
-      <a href="mailto:gabsreis@hotmail.com">gabsreis@hotmail.com</a> · 
-      <a href="https://www.linkedin.com/in/gabriela-dos-reis-barreto/" target="_blank">LinkedIn</a>
-    </p>
-    <p>✨ Obrigada pela visita! ✨</p>
+    <p>Contato: <a href="mailto:gabsreis@hotmail.com">gabsreis@hotmail.com</a> · <a href="https://www.linkedin.com/in/gabriela-dos-reis-barreto/" target="_blank">LinkedIn</a></p>
   </footer>
-
 </body>
 </html>
